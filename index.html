@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EvoDoc | Nurse Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nurse & Receptionist Portal</h1>
+        <nav><a href="index.html">Reception</a> | <a href="doctor.html">Doctor View</a></nav>
+
+        <div class="card">
+            <h2>Patient Intake Form</h2>
+            <div class="section-group">
+                <h3>Personal Information</h3>
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="date" id="dob">
+                <input type="text" id="gender" placeholder="Gender">
+                <input type="text" id="contact" placeholder="Contact Number">
+            </div>
+            <div class="section-group">
+                <h3>Medical & Emergency</h3>
+                <input type="text" id="emergency" placeholder="Emergency Contact Details">
+                <input type="text" id="blood" placeholder="Blood Group">
+                <input type="text" id="allergies" placeholder="Allergies">
+                <input type="text" id="conditions" placeholder="Chronic Conditions">
+            </div>
+            <button onclick="savePatient()">Submit and Save</button>
+        </div>
+
+        <div class="card">
+            <h2>Appointment Registration</h2>
+            <select id="docSelect">
+                <option value="Dr. Smith (Available)">Dr. Smith - Available</option>
+                <option value="Dr. Adams (Busy)">Dr. Adams - Busy</option>
+            </select>
+            <input type="time" id="apptTime">
+            <button onclick="savePatient()">Confirm Booking</button>
+        </div>
+
+        <div class="card">
+            <h2>Appointments List View</h2>
+            <input type="text" id="search" onkeyup="searchTable()" placeholder="Search by patient name...">
+            <table id="apptTable">
+                <thead>
+                    <tr><th>Patient</th><th>Doctor</th><th>Time</th><th>Status</th><th>Actions</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

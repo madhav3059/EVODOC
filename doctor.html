@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EvoDoc | Doctor Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="card">
+            <h1>Doctor Dashboard</h1>
+            <p>Welcome, Dr. Smith | Appointments Today: <span id="count">0</span></p>
+            <p>Recent Activity: New intake completed.</p>
+        </header>
+
+        <div class="card">
+            <h2>Upcoming Appointments</h2>
+            <div id="queue"></div>
+        </div>
+
+        <div id="patientDetails" class="card" style="display:none">
+            <h2>Patient Details Page</h2>
+            <div class="tabs">
+                <p><strong>Name:</strong> <span id="vName"></span></p>
+                <p><strong>Medical History:</strong> Summary of past visits.</p>
+                <p><strong>Allergies:</strong> <span id="vAllergies"></span></p>
+            </div>
+            <h3>New Clinical Notes</h3>
+            <textarea id="note" placeholder="Add clinical findings..."></textarea>
+            <button onclick="alert('Clinical Record Updated')">Update Patient Record</button>
+        </div>
+    </div>
+    <script src="doctor-script.js"></script>
+</body>
+</html>

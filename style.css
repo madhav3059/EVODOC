@@ -1,0 +1,10 @@
+body { font-family: sans-serif; background: #f8f9fa; padding: 20px; }
+.container { max-width: 900px; margin: auto; }
+.card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.section-group { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+input, select, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+.badge { background: #e7f3ff; color: #007bff; padding: 5px 10px; border-radius: 15px; font-size: 12px; }
+.patient-card { border: 1px solid #ddd; padding: 15px; margin-top: 10px; border-radius: 8px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
